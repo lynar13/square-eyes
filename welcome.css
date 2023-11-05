@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(42, 40, 40);
+    background-image: url("/images/fiftyshades.png");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh;
+    background-blend-mode: multiply;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+header {
+    color: white;
+    margin-left: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    
+}
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    
+}
+.heading span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    color: #D10CA6;
+    
+    
+}
+.sub-heading {
+    font-size: 13px;
+    font-weight: 5%;
+    text-align: center;   
+}
+.watch-button {
+    background: #D10CA6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    width: 170px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+.watch-button a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    align-items: center;
+}    
+.watch-button:hover {
+    background-color: white;
+    color: #D10CA6;
+    
+}
+.watch-button a:hover {
+    color: #D10CA6;
+}
+
+
