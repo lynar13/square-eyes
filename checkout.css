@@ -226,7 +226,7 @@ a {
 .heading-title h2 {
     justify-content: space-between;
     align-items: center;
-    margin-left: 80px;
+    margin-left: 2px;
 }
 h2 span {
     color: #D10CA6;
@@ -242,26 +242,55 @@ h3 {
 }
 
 .title {
-    background-color: #D10CA6;
     display: flex;
     position: relative;
     float: left;
     padding-top: 20px;
     width: 80%;
+    margin-left: -75px;
 }
-.title .item {
-    padding-right: 250px;
+.title .pay-with h3{
+    padding-right: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100px;
 }
 .title-right {
     display: flex;
-    position: relative;   
+    position: relative; 
+    width: 500px; 
+    margin-top: 20px; 
+}
+.title-right .paypal .payment-method{
+    background-color: #282528;
+    font-size: 15px;
+    color: #7a7b7d;
+    border-style: none;
+    padding: 6px 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 100px;
+}
+.title-right .credit-card .payment-method{
+    background-color: #D10CA6;
+    color: white;
+    border-style: none;
+    padding: 6px 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 100px;
+}
+.title-right .total-price h3 {
+    width: 100px;
+    margin-top: -1px;
 }
 hr {
     display: flex;
     position: absolute;
-    margin-top: 70px;
+    margin-top: 20px;
     width: 80%;
     color: #7a7a7d;
+    width: 520px;
 }
 .item-content {
     padding-right: 50px;
@@ -270,130 +299,101 @@ hr {
     position: relative;
     width: 80%;
 }
-.content-right {
-    display: flex;
-    position: relative; 
-    margin-left: 1px;   
-    padding-right: 90px;  
-}
-.content-right .quantity {
-    margin-left: 85px;
-    padding-top: 25px;
-    width: 120px;
-    padding-right: 1px;
-}
-.content-right .price h6 {
-    width: 100%;
-    font-weight: lighter;
-}
-.content-right .total-price {
-    margin-left: 1px;
-}
-.content-right .total-price h6 {
-    width: 100px;
-    font-weight: lighter;
-}
-h6 {
-    font-size: 12px;
-    margin-left: 80px;
-    padding-right: 40px;   
-}
-.item-content .movie-title {
-    padding-right: 70px;
-    margin-left: 40px;
-}
-.item-content hr {
-    display: flex;
-    position: absolute;
-    width: 95%;
-    margin-top: 220px;
-}
-
-.movie-title img {
-    width: 100px;
-    display: flex;
-    padding-right: 30px;
-    padding-left: 40px;
-    padding-top: 40px;
-}
-.movie-title {
-    display: flex;
-    position: relative;
-}
-.movie-title h6 {
-    display: block;
-    position: absolute;
-    margin-left: 170px;
-    padding-top: 50px;
-    font-size: 15px;
-}
-.movie-title p {
-    width: 120px;
-    display: flex;
-    font-size: 12px;
-    font-weight: lighter;
-    padding-top: 99px;
-}
 .checkout {
+    float: left;
+    margin-top: 80px;
+    margin-left: -940px;
+}
+.saved-button {
     width: 100%;
 }
-.checkout .col-3{
-    width: 30%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-left: -7%;
-    padding-top: 40px;
-}
-.back-button a{
-    text-decoration: none;
-    display: inline-block;
+.saved-button .profile {
+    background-color: #810867;
+    color: rgb(115, 112, 112);
+    font-weight: bold;
+    border-style: none;
+    border-radius: 10px;
     padding: 8px 16px;
+    margin-top: -10px;
 }
-.back-button a:hover {
-    background-color: #D10CA6;
-    color: rgb(246, 241, 241);
+.saved-button h6 {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7a7a7d;
+}
+.total-price {
+    margin-left: 650px;
+    margin-top: -150px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.total-price p {
+    font-size: 12px;
+    font-weight: lighter;
 }
 .total-sum {
-    width: 50%;
-    display: flex;
-    position: relative;
-    margin-left: 540px;
-    margin-top: -5%;
+    margin-left: 650px;
+    background-color: white;
+    color: #282528;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 28px;
+    
 }
 .total-sum span {
-    font-weight: lighter;
+    color: #D10CA6;
+}
+.confirm-payment {
+    float: left;
+    margin-left: -940px;
+    margin-top: 630px;
 }
 .checkout-btn {
-    display: inline-block;
-    position: relative;
     background-color: #D10CA6;
-    padding: 10px 45px;
     color: white;
-    font-weight: bold;
-    font-size: 17px;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
     border-style: none;
-    margin-left: 850px;
-    margin-top: 40px;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin-bottom: 50px;
 }
-button:hover {
-    background-color: white;
-    color: #D10CA6;
-    cursor: pointer;
+.confirm-payment button {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 16px 20px;
+    border-radius: 20px;
 }
-.checkout .row {
-    display: inline-block;
+.form {
+    display: flex;
     position: absolute;
+    margin-top: 200px;
+    margin-left: 135px;
 }
-.checkout .previous {
-    text-decoration: underline;
+.form h2 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+form {
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+}
+input[type=text] {
+    margin-bottom: 20px;
+    width: 500px;
+    border-radius: 5px;
+    padding: 12px;
+    background-color: transparent;
+    outline: none;
+    border-style: solid;
+}
+label {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #322f32;
 }
 
-
-
-
-  
+form label .container input[type=checkbox]{
+    margin-left: 30px;
+}

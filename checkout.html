@@ -46,59 +46,69 @@
     </header>
     <main>
         <section class="heading-title">
-            <h2>Cart <span>1</span></h2>
+            <h2>Confirm and pay</h2>
        
             <div class="container">
                 <div class="row title">
-                    <div class="col-2 col-s-2 item">
-                        <h3>Item</h3>
+                    <div class="col-2 col-s-2 pay-with">
+                        <h3>Pay with</h3>
                     </div>
                     <div class="title-right">
-                        <div class="col-2 col-s-2 price">
-                        <h3>Price</h3>
+                        <div class="col-2 col-s-2 paypal">
+                        <button class="payment-method">Paypal</button>
                         </div>
-                    <div class="col-2 col-s-2 quantity">
-                        <h3>Quantity</h3>
-                    </div>
-                        <div class="col-2 col-s-2 total-price">
-                        <h3>Total Price</h3>
+                        <div class="col-2 col-s-2 credit-card">
+                        <button class="payment-method">Credit Card</button>
                         </div>
+                       
                     </div>
                 </div>
                 <hr>
-                <div class="row item-content">
-                    <div class="col-2 col-s-2 movie-title">
-                        <img src="images/fiftyshades.png" alt="">
-                        <h6>Fifty Shades Freed</h6>
-                        <p>18+ &nbsp2019 <br>
-                        Romance &nbsp 2hr 30m</p>
-                    </div>
-                    <div class="content-right">
-                        <div class="col-2 col-s-2 price">
-                        <h6>NOK 99</h6>
-                        </div>
-                    <div class="col-2 col-s-2 quantity">
-                        <button class="w3-button w3-circle w3-black">-</button> 1
-                        <button class="w3-button w3-circle w3-black">+</button>
-                    </div>
-                        <div class="col-2 col-s-2 total-price">
-                        <h6>NOK 99</h6>
-                        </div>
-                    </div>
-                    <hr>  
-                </div>
                 <section class="checkout">
-                    <div class="row back-button">
+                    <div class="row saved-button">
                         <div class="col-3 col-s-3">
-                            <a href="movies.html" class="previous">Continue shopping</a>
+                            <h6>Saved Contact Info</h6>
+                            <button class="profile">Saved Info</button>
                         </div>
-                        <div class="col-7 col-s-7 total-sum">
-                            <h3><span>Total Price :</span>&nbsp &nbsp NOK &nbsp99</h3>
-                        </div>    
-                    </div>
-                    <a href="checkout.html"><button class="checkout-btn">Pay Now</button></a> 
+                        <div class="col-2 col-s-2 total-price">
+                            <h3>Price Details</h3>
+                            <p>kr99 &nbsp &nbsp x &nbsp &nbsp 2 &nbsp &nbsp 
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                            &nbsp &nbsp kr198</p>
+                            <p>Shipping &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                                &nbsp &nbsp &nbsp &nbsp &nbspkr0</p>
+                        </div>
+                        <label class="total-sum">Total<span>(NOK)</span>&nbsp
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 198,00</label>
+                    </div>     
+                <hr>  
+                </div>  
                 </section>
-                   
+                <section class="form">
+                    <h2>Credit Card</h2>    
+                
+                <form>
+                    <label for="cnumber">Card Number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="cname">Card Holder</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Lyn Resell">
+                    <label for="expmonth">Exp Date</label>
+                    <input type="text" id="expmonth" name="expdate" placeholder="mm / dd">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="">
+                    <label class="container">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>Save Card
+                      </label>
+                </form>
+                </form>
+            </section>
+                <div class="confirm-payment">
+                <a href="checkout.html"><button class="checkout-btn">Confirm and pay</button></a> 
+                </div>
             </div>
         </section>
     </main>

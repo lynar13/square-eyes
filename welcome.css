@@ -1,47 +1,49 @@
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(42, 40, 40);
-    background-image: url("/images/fiftyshades.png");
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+.container img {
     background-repeat: no-repeat; 
     background-size: cover; 
+    background-position: center;
     height: 100vh;
-    background-blend-mode: multiply;
+    width: 100%;
+    filter: brightness(20%);
+    font-family: 'Poppins, Arial, Helvetica, sans-serif';
+}
+.container .content {
+    display: block;
+    position: absolute;
     align-items: center;
-    display: flex;
+    width: 100%;
     justify-content: center;
-    position: relative;
-    
+    margin-left: 40px;
 }
 
-header {
-    color: white;
-    margin-left: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flexbox;
-    
-}
-.heading {
+.content .heading {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    
+    align-items: center;
+    display: flex;   
 }
-.heading span {
+.content .heading span {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100px;
-    color: #D10CA6;
-    
-    
+    color: #D10CA6;    
 }
-.sub-heading {
+.content .sub-heading {
     font-size: 13px;
     font-weight: 5%;
     text-align: center;   
 }
-.watch-button {
+.content .watch-button {
     background: #D10CA6;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
@@ -77,5 +79,32 @@ header {
 .watch-button a:hover {
     color: #D10CA6;
 }
+
+ /* Decrease text size */
+ @media only screen and (max-width: 600px) {
+    .content .heading {
+      font-size: 20px;
+      width: 400px;
+      height: 450px;
+      margin-left: 120px;
+    }
+    .content .sub-heading {
+      font-size: 11px;
+      width: 350px;
+      margin-left: 80px;
+    }
+    .content .heading span {
+        font-size: 80px;
+        display: flex;
+    }
+    .content {
+        display: block;
+        position: relative;
+        align-items: center;
+    }
+    .content .watch-button {
+       margin-left: -30px;
+    }
+  }
 
 
