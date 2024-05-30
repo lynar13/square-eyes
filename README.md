@@ -111,12 +111,12 @@ Test the website on major browsers (Chrome, Firefox, Safari, Edge) and various d
 Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code adheres to the project's coding standards.
 
 ## Acknowledgments
-Noroff School of Technology and Digital Media
-W3Schools
-CSS-Tricks
+
+[Noroff School of Technology and Digital Media](https://www.noroff.no/)
+[W3Schools](https://www.w3schools.com/)
 
 ## Contact
 
-Visit the live site: Square Eyes
+Visit the live site: [Square Eyes](https://norofffeu.github.io/html-css-course-assignment-lynar13/)
 
-For any questions or feedback, please contact Lynar13.
+For any questions or feedback, please contact [Lynar13].
