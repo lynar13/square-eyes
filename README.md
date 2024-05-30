@@ -56,6 +56,10 @@ git clone https://github.com/NoroffFEU/html-css-course-assignment-lynar13.git
 
 cd html-css-course-assignment-lynar13
 
+### Running the Website
+
+- Open the 'index.html' file in your web browser to view the website.
+
 ## Project Structure
 
 The project directory is structured as follows:
