@@ -1,0 +1,158 @@
+body {
+  background-color: rgb(15, 13, 13);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Base styles for the navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D10CA6;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+nav .logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+  }
+
+  .nav-links li {
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+  }
+
+  .nav-links li a {
+      width: 100%;
+      display: block;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+}
+
+/* Styles for showing the menu when toggled */
+.nav-links.show {
+  display: flex;
+}
+
+.contact-heading {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #222;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #D10CA6;
+  color: white;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #b00985;
+}
+
+footer {
+  background-color: #d10ca6;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .footer-logo img {
+  height: 40px;
+}
+
+footer .footer-text {
+  margin-top: 10px;
+}
+
+footer .copy {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  
+  .contact-form {
+      padding: 30px;
+  }
+}

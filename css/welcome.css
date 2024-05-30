@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins, Arial, Helvetica, sans-serif';
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/path/to/your/image.jpg'); /* Update this path to your actual image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed */
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.content .heading {
+    font-size: 50px;
+    margin: 0;
+}
+
+.content .heading span {
+    font-size: 100px;
+    color: #D10CA6;
+}
+
+.content .sub-heading {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.content .watch-button {
+    background: #D10CA6;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.watch-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.watch-button:hover {
+    background-color: white;
+    color: #D10CA6;
+}
+
+.watch-button:hover a {
+    color: #D10CA6;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .content .heading {
+        font-size: 30px;
+    }
+
+    .content .heading span {
+        font-size: 60px;
+    }
+
+    .content .sub-heading {
+        font-size: 11px;
+    }
+
+    .content .watch-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

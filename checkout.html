@@ -3,95 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the cart page">
-    <link rel="stylesheet" href="checkout.css">
+    <meta name="description" content="This is the checkout page">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Cart Page</title>
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
-    <header class="header-main">
-        <section class="header-main-logo">
-            <a href="home.html"><img src="images/logo.png" alt="logo"></a>
-            
-            <!--Logo and Nav division-->
-            <div class="header-main-div"></div> 
-
-           <!--Left side nav menu-->
-            <nav class="header-main-nav-left">
-                <ul class="menu-left">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="movies.html">Movies</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul> 
-            </nav>    
-        </section>  
-        
-        <!--Right side nav menu-->
-        <section class="header-main-nav-right">
-            <a href="cart.html"><div class="header-main-nav-right-cart"></div></a>
-            
-            <div class="top-nav">
-                <div id="menu-list">
-                    <a href="home.html">Home</a>
-                    <a href="movies.html">Movies</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </section>
-    </header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html" class="home-button">Home</a></li>
+            <li><a href="movies.html" class="movies-button">Movies</a></li>
+            <li><a href="about.html" class="about-button">About Us</a></li>
+            <li><a href="contact.html" class="contact-button">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
     <main>
         <section class="heading-title">
-            <h2>Confirm and pay</h2>
-       
-            <div class="container">
-                <div class="row title">
-                    <div class="col-2 col-s-2 pay-with">
-                        <h3>Pay with</h3>
-                    </div>
-                    <div class="title-right">
-                        <div class="col-2 col-s-2 paypal">
-                        <button class="payment-method">Paypal</button>
-                        </div>
-                        <div class="col-2 col-s-2 credit-card">
-                        <button class="payment-method">Credit Card</button>
-                        </div>
-                       
-                    </div>
+            <h2>Confirm and Pay</h2>
+        </section>
+        <div class="container">
+            <div class="payment-methods">
+                <h3>Pay with</h3>
+                <button class="payment-method">Paypal</button>
+                <button class="payment-method">Credit Card</button>
+            </div>
+            <hr>
+            <div class="checkout-details">
+                <div class="saved-info">
+                    <h6>Saved Contact Info</h6>
+                    <button class="profile">Saved Info</button>
                 </div>
-                <hr>
-                <section class="checkout">
-                    <div class="row saved-button">
-                        <div class="col-3 col-s-3">
-                            <h6>Saved Contact Info</h6>
-                            <button class="profile">Saved Info</button>
-                        </div>
-                        <div class="col-2 col-s-2 total-price">
-                            <h3>Price Details</h3>
-                            <p>kr99 &nbsp &nbsp x &nbsp &nbsp 2 &nbsp &nbsp 
-                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-                            &nbsp &nbsp kr198</p>
-                            <p>Shipping &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-                                &nbsp &nbsp &nbsp &nbsp &nbspkr0</p>
-                        </div>
-                        <label class="total-sum">Total<span>(NOK)</span>&nbsp
-                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 198,00</label>
-                    </div>     
-                <hr>  
-                </div>  
-                </section>
-                <section class="form">
-                    <h2>Credit Card</h2>    
-                
+                <div class="price-details">
+                    <h3>Price Details</h3>
+                    <p>kr99 x 2 = kr198</p>
+                    <p>Shipping = kr0</p>
+                    <label class="total-sum">Total (NOK) 198,00</label>
+                </div>
+            </div>
+            <hr>
+            <section class="payment-form">
+                <h2>Credit Card</h2>
                 <form>
-                    <label for="cnumber">Card Number</label>
+                    <label for="ccnum">Card Number</label>
                     <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
                     <label for="cname">Card Holder</label>
                     <input type="text" id="cname" name="cardname" placeholder="Lyn Resell">
@@ -100,19 +61,32 @@
                     <label for="cvv">CVV</label>
                     <input type="text" id="cvv" name="cvv" placeholder="">
                     <label class="container">
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>Save Card
-                      </label>
-                </form>
+                        <input type="checkbox" checked="checked"> Save Card
+                    </label>
                 </form>
             </section>
-                <div class="confirm-payment">
-                <a href="checkout.html"><button class="checkout-btn">Confirm and pay</button></a> 
-                </div>
+            <div class="confirm-payment">
+                <a href="checkout.html"><button class="checkout-btn">Confirm and Pay</button></a>
             </div>
-        </section>
+        </div>
     </main>
-    <script src="home.js"></script>
-    
+    <footer>
+        <div class="footer-logo">
+            <a href="home.html"><img src="assets/images/logo.png" alt="logo"></a>
+            <div class="footer-text">
+                <p>Terms and Privacy Notice</p>
+                <p>Send us feedback</p>
+                <p>Help</p>
+                <p>Cookies Notice</p>
+                <div class="copy">&copy; 2024 Square Eyes</div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
