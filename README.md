@@ -112,8 +112,8 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ## Acknowledgments
 
-[Noroff School of Technology and Digital Media](https://www.noroff.no/)
-[W3Schools](https://www.w3schools.com/)
+- [Noroff School of Technology and Digital Media](https://www.noroff.no/)
+- [W3Schools](https://www.w3schools.com/)
 
 ## Contact
 
