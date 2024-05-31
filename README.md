@@ -11,7 +11,6 @@ Square Eyes is a responsive website designed and developed as part of the HTML &
 - Features
 - Technologies Used
 - Getting Started
-- Project Structure
 - Deployment
 - Testing
 - Contributing
@@ -59,25 +58,6 @@ cd html-css-course-assignment-lynar13
 ### Running the Website
 
 - Open the 'index.html' file in your web browser to view the website.
-
-## Project Structure
-
-The project directory is structured as follows:
-
-html-css-course-assignment-lynar13/
-├── assets/
-│   ├── images/
-├── css/
-├── js/
-├── index.html
-├── home.html
-├── movies.html
-├── description.html
-├── about.html
-├── contact.html
-├── cart.html
-├── checkout.html
-├── README.md
 
 ## Deployment
 
