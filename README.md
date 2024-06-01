@@ -11,7 +11,6 @@ Square Eyes is a responsive website designed and developed as part of the HTML &
 - Features
 - Technologies Used
 - Getting Started
-- Project Structure
 - Deployment
 - Testing
 - Contributing
@@ -60,25 +59,6 @@ cd html-css-course-assignment-lynar13
 
 - Open the 'index.html' file in your web browser to view the website.
 
-## Project Structure
-
-The project directory is structured as follows:
-
-html-css-course-assignment-lynar13/
-├── assets/
-│   ├── images/
-├── css/
-├── js/
-├── index.html
-├── home.html
-├── movies.html
-├── description.html
-├── about.html
-├── contact.html
-├── cart.html
-├── checkout.html
-├── README.md
-
 ## Deployment
 
 The website can be deployed on platforms like Netlify or GitHub Pages. For this project, it is deployed on GitHub Pages.
@@ -112,8 +92,8 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ## Acknowledgments
 
-[Noroff School of Technology and Digital Media](https://www.noroff.no/)
-[W3Schools](https://www.w3schools.com/)
+- [Noroff School of Technology and Digital Media](https://www.noroff.no/)
+- [W3Schools](https://www.w3schools.com/)
 
 ## Contact
 
