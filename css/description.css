@@ -1,0 +1,400 @@
+body {
+  background-color: rgb(15, 13, 13);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Base styles for the navigation */
+nav, .desc-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D10CA6;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+nav .logo img {
+  height: 40px;
+}
+
+.nav-links, .desc-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a, .desc-links li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover, 
+.desc-links li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #363732;
+  border-radius: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+  }
+
+  .nav-links li {
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+  }
+
+  .nav-links li a {
+      width: 100%;
+      display: block;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+}
+
+/* Styles for showing the menu when toggled */
+.nav-links.show {
+  display: flex;
+}
+
+
+/* Container for centering the search bar */
+.content-heading-search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; 
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.search-bar button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 20px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .content-heading-search-bar {
+      height: auto; 
+      padding: 50px;
+  }
+
+  .search-bar input {
+      margin: 10px 0 0 0;
+  }
+}
+.content {
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  padding: 30px;
+  background-color: #dccfcf;
+  color: #363732;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.desc-heading img {
+  border-radius: 8px;
+  max-width: 300px;
+  display: block;
+  margin-left: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.desc-title {
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-left: 70px;
+}
+
+.desc-title h2,
+.desc-title h3 {
+  margin: 10px 0;
+}
+
+.desc-title p {
+  margin: 5px 0;
+}
+.star-img img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.buy-add-button {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 200px;
+}
+
+.buy-add-button button {
+  border-radius: 8px;
+}
+.buy-now,
+.add-to-cart {
+  background-color: #D10CA6;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.add-to-cart img {
+  width: 20px;
+}
+.add-to-cart:hover {
+  background-color: #ffffff;
+  color: #8e8e91;
+}
+.buy-now:hover {
+  background-color: #ffffff;
+  color: #D10CA6;
+}
+
+.desc-nav {
+  border-radius: 8px;
+}
+.description,
+.cast,
+.director,
+.more-details {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.description h3,
+.cast h3,
+.director h3,
+.more-details h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cast p,
+.more-details p,
+.director p {
+  text-align: center;
+} 
+
+.description p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.thumbnails-heading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.thumbnails-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+
+.button-overlay {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.thumbnail-img img {
+  max-width: 350px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.thumbnail-img:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #D10CA6;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buy-2 {
+  background-color: #D10CA6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart-2 {
+  background-color: black;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-2 img {
+  width: 20px;
+  height: 20px;
+}
+footer {
+  background-color: #d10ca6;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .footer-logo img {
+  height: 40px;
+}
+
+footer .footer-text {
+  margin-top: 10px;
+}
+
+footer .copy {
+  margin-top: 10px;
+}
+
+/* Style for the Back to Top button */
+.back-to-top.always-show {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #363732;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.back-to-top.always-show:hover {
+  background-color: #D10CA6;
+}
+
+
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  
+  .title {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .desc-heading img {
+    margin: 0 auto;
+  }
+
+  .desc-title {
+      margin-left: 0;
+      text-align: center;
+  }
+  .desc-nav {
+    justify-content: center;
+  }
+  .desc-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buy-add-button {
+    margin: 0 auto;
+  }
+
+  .thumbnails-container {
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+  .button-overlay-img img {
+      max-width: 300px ;
+  }
+}

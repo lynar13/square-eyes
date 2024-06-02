@@ -1,0 +1,1223 @@
+body {
+    background-color: rgb(15, 13, 13);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Navigation */
+.header-main {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    padding-left: 120px;
+    justify-content: space-between;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    padding-left: 30px;
+    display: flex;    
+}
+.header-main-logo img {
+    height: 35px;
+    align-self: center;
+    padding-top: 10px;  
+    padding-right: 16px;
+}
+.header-main-div {
+    width: 2px;
+    height: 30px;
+    border-radius: 2px;
+    background: #7a7a7d;
+    align-self: center;
+    margin-left: 25px;
+}
+.header-main-nav-left {
+    width: fit-content;
+    height: 100%;
+    
+}
+.header-main-nav-left ul {
+    list-style: none;   
+    margin-left: 8px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.header-main-nav-left ul li {
+    display: inline;
+    float: left;
+}
+.header-main-nav-left ul li a {
+    padding: 0 5px;
+    color: #cbccd1;
+    font-weight: bold;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+}
+.header-main-nav-right {
+    width: fit-content;
+    height: 100%;
+    padding-right: 15%;
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+    margin-right: 60px;
+}  
+.header-main-nav-right-cart {
+    background-image: url('images/shopping-cart.png');
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.header-main ul li a:hover {
+    color: #D10CA6;
+}
+
+/* Collapsible Menu icon */
+.top-nav {
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  display: none;
+}
+.top-nav #menu-list {
+  display: none;
+  width: 100%;
+}
+
+.top-nav a {
+color: white;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+display: block;
+}
+
+.top-nav a .icon {
+background-color: white;
+display: block;
+position: absolute;
+}
+
+.top-nav a:hover {
+color: rgb(245, 241, 241);
+}
+
+.active {
+background-color: #04AA6D;
+color: white;
+}
+
+/* Search Bar */
+.content-heading-search-bar {
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 0;
+}
+.search-bar {
+    width: 100%;
+    height: 15px;
+    max-width: 300px;
+    background: white;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    margin-left: 10px;
+}
+.search-bar button {
+    border: 0;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.search-bar button img {
+    width: 18px;
+    padding-top: 5px;
+   
+}
+.search-bar input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    margin-left: 5px;
+    font-size: 15px;
+}
+::placeholder {
+    color: #111111;
+}
+
+
+/* Columns widths */
+ /* For tablets */
+ @media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+
+  /* For desktop */
+  @media only screen and (min-width: 768px) { 
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  /* For mobile phones */
+  @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 30%; 
+      float: left;
+    }
+   .header-main .header-main-logo {
+        width: 40px;
+    }
+    .content-heading-search-bar {
+      display: block;
+      width: 40%;
+      margin-left: 110px;
+      margin-top: 50px;
+    }
+    .header-main-div {
+        display: none;
+    }
+    .header-main-nav-right {
+        display: flex;
+    }
+    .header-main-nav-right-cart {
+        display: flex;
+        width: 17px;
+        height: 17px;
+    }
+    .header-main-nav-left {
+        display: none;
+    }
+    .header-main-nav-right .top-nav {
+      display: flex;
+      position: relative;
+    }
+    .top-nav a:hover {
+      background-color: #D10CA6;
+      color: rgb(4, 4, 4);
+    }
+    .top-nav {
+      background-color: transparent;
+      margin-right: 45px;
+    }
+    .top-nav a {
+      color: rgb(72, 69, 69);
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    #menu-list {
+      background-color: #f7f7fe;
+      margin-top: 85%;
+      display: block;
+      position: relative; 
+    }
+    .action .button-overlay-img-1  {
+      margin-left: 30px;
+    }
+    .action .button-overlay-img-2  {
+      margin-left: 30px;
+  }
+  .action h3 {
+    font-size: 13px;
+    width: 300px;
+  }
+  .drama-romance h3 {
+    font-size: 13px;
+    width: 300px;
+    display: inline-block;
+    position: absolute;
+  }
+  .fantasy h3 {
+    font-size: 13px;
+    width: 300px;
+    display: inline-block;
+    position: absolute;
+  }
+  .horror-thriller h3 {
+    font-size: 13px;
+    width: 300px;
+    display: inline-block;
+    position: absolute;
+  }
+  .tv-series h3 {
+    font-size: 13px;
+    width: 300px;
+    display: inline-block;
+    position: absolute;
+  }
+  .drama-romance .button-overlay-img-1 {
+    padding-left: 30px;
+  }
+  .tv-series .button-overlay-img-1 {
+    padding-left: 30px;
+  }
+  .fantasy .button-overlay-img-1 {
+    padding-left: 30px;
+  }
+  .row {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    margin-left: 2%;
+  }
+  footer {
+    display: flex;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .footer-logo .footer-copyright img{
+    display: none;
+  }
+  footer .footer-logo img {
+    display: block;
+    position: relative;
+    margin-left: 220px;
+  }
+
+}
+
+/* Categories List */
+.content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    padding-top: 50px;
+}
+.content .categories {
+    display: flex;
+    position: relative;      
+}
+.button-overlay img{
+  max-width: 170px;
+  max-height: 225px;
+}
+
+/* Action Category*/
+        
+.categories .row .action {
+    display: inline-block;
+    position: absolute;  
+}
+.action h3 {
+    margin-left: 25px;
+}
+.arrow-buttons {
+   display: inline-block;
+   position: relative;
+   align-items: center;
+}
+.arrow-buttons .previous {
+  background-color: none;
+  color: rgb(254, 252, 252);
+  margin-left: 880px;
+}
+.action .arrow-buttons {
+    display: flex;
+}
+.arrow-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }  
+.arrow-buttons a:hover {
+    background-color: #D10CA6;
+    color: black;
+  }
+  
+
+  
+.arrow-buttons .next {
+    background-color: none;
+    color: rgb(254, 252, 252);
+}
+.categories .action .button-overlay {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-right: 20px;
+  }
+  
+  .action .button-overlay-img-1 img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    margin-right: 160px;
+    padding-bottom: 13px;
+    margin-left: 100px;
+  }
+  .action .button-overlay-img-1 .buy-1 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 8px;
+  }
+  .action .button-overlay-img-1 .cart-1  {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: absolute;
+  }
+  .action .button-overlay-img-1 .cart-1 img {
+    width: 22px;
+    align-items: center;
+    margin-top: 11px;
+    margin-left: 10px;
+  }
+  .action .button-overlay-img-2 img{
+    width: 170px;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 10px;
+  }
+  .action .button-overlay-img-2 .buy-2 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .action .button-overlay-img-2 .cart-2  {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: absolute;
+  }
+  .action .button-overlay-img-2 .cart-2 img {
+    width: 22px;
+    margin-top: 14px;
+    align-items: center; 
+    margin-left: 10px;    
+  }
+ 
+  .action .button-overlay-img-3 img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+  .action .button-overlay-img-3 .buy-3 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+  }
+  .action .cart-3  {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .action .cart-3 img {
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 10px; 
+  }
+ 
+  .action .button-overlay-img-4 img{
+    width: 170px;
+    display: flex;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .action .button-overlay-img-4 .buy-4 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+  }
+  .action .cart-4  {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .action .cart-4 img {
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 10px; 
+  }
+
+ /* Drama/Romance Category*/
+.drama-romance {
+    display: inline-block;
+}
+.drama-romance h3 {
+    margin-left: 25px;
+}
+.drama-romance .arrow-buttons {
+   display: inline-block;
+   position: relative;
+   align-items: center;
+}
+.drama-romance .arrow-buttons {
+    display: flex;
+}
+.drama-romance .arrow-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }  
+.drama-romance .arrow-buttons a:hover {
+    background-color: #D10CA6;
+    color: black;
+  }
+  
+.drama-romance .arrow-buttons .previous {
+    background-color: none;
+    color: rgb(254, 252, 252);
+    margin-left: 775px;
+  }
+  
+.drama-romance .arrow-buttons .next {
+    background-color: none;
+    color: rgb(254, 252, 252);
+}
+.categories .drama-romance .button-overlay {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-right: 20px;
+  }
+  .drama-romance .button-overlay-image img {
+    width: 200px;
+    height: 0px;
+  }
+  .drama-romance .button-overlay-img-1 img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    margin-right: 160px;
+    padding-bottom: 13px;
+    margin-left: 100px;
+  }
+  .drama-romance .button-overlay-img-1 .buy-1 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  .drama-romance .button-overlay-img-1 .cart-1  {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: absolute;
+  }
+  .drama-romance .button-overlay-img-1 .cart-1 img {
+    width: 22px;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 10px;
+  }
+  .drama-romance .button-overlay-img-2 img{
+    width: 170px;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 10px;
+  }
+  .drama-romance .button-overlay-img-2 .buy-2 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .drama-romance .button-overlay-img-2 .cart-2  {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: absolute;
+  }
+  .drama-romance .button-overlay-img-2 .cart-2 img {
+    width: 22px;
+    margin-top: 14px;
+    align-items: center; 
+    margin-left: 10px;    
+  }
+ 
+  .drama-romance .button-overlay-img-3 img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+  .drama-romance .button-overlay-img-3 .buy-3 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-top: 7px;
+  }
+  .drama-romance .cart-3  {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .drama-romance .cart-3 img {
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -6.5%;
+    margin-left: 10px; 
+  }
+ 
+  .drama-romance .button-overlay-img-4 img{
+    width: 170px;
+    display: flex;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .drama-romance .button-overlay-img-4 .buy-4 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+  }
+  .drama-romance .cart-4  {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .drama-romance .cart-4 img {
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -6.5%;
+    margin-left: 10px; 
+  }
+ 
+  /* Fantasy/Adventure Category*/
+.fantasy {
+    display: inline-block;
+}
+.fantasy h3 {
+    margin-left: 25px;
+}
+.fantasy .arrow-buttons {
+   display: inline-block;
+   position: relative;
+   align-items: center;
+}
+.fantasy .arrow-buttons {
+    display: flex;
+}
+.fantasy .arrow-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }  
+.fantasy .arrow-buttons a:hover {
+    background-color: #D10CA6;
+    color: black;
+  }
+  
+.fantasy .arrow-buttons .previous {
+    background-color: none;
+    color: rgb(254, 252, 252);
+    margin-left: 760px;
+  }
+  
+.fantasy .arrow-buttons .next {
+    background-color: none;
+    color: rgb(254, 252, 252);
+}
+.categories .fantasy .button-overlay {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-right: 20px;
+  }
+  .fantasy .button-overlay-image img {
+    width: 200px;
+    height: 0px;
+  }
+  .fantasy .button-overlay-img-1 img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    margin-right: 160px;
+    padding-bottom: 13px;
+    margin-left: 100px;
+  }
+  .fantasy .button-overlay-img-1 .buy-1 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  .fantasy .button-overlay-img-1 .cart-1  {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: absolute;
+  }
+  .fantasy .button-overlay-img-1 .cart-1 img {
+    width: 22px;
+    align-items: center;
+    margin-top: 13px;
+    margin-left: 10px;
+  }
+  .fantasy .button-overlay-img-2 img{
+    width: 170px;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 10px;
+  }
+  .fantasy .button-overlay-img-2 .buy-2 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .fantasy .button-overlay-img-2 .cart-2  {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: absolute;
+  }
+  .fantasy .button-overlay-img-2 .cart-2 img {
+    width: 22px;
+    margin-top: 14px;
+    align-items: center; 
+    margin-left: 10px;    
+  }
+ 
+  .fantasy .button-overlay-img-3 img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+  .fantasy .button-overlay-img-3 .buy-3 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-top: 6px;
+  }
+  .fantasy .cart-3  {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .fantasy .cart-3 img {
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 10px; 
+  }
+ 
+  .fantasy .button-overlay-img-4 img{
+    width: 170px;
+    display: flex;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .fantasy .button-overlay-img-4 .buy-4 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+  }
+  .fantasy .cart-4  {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .fantasy .cart-4 img {
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 10px; 
+  }
+
+  /* Horror/Thriller Category*/
+.horror-thriller {
+    display: inline-block;
+}
+.horror-thriller h3 {
+    margin-left: 25px;
+}
+.horror-thriller .arrow-buttons {
+   display: inline-block;
+   position: relative;
+   align-items: center;
+}
+.horror-thriller .arrow-buttons {
+    display: flex;
+}
+.horror-thriller .arrow-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }  
+.horror-thriller .arrow-buttons a:hover {
+    background-color: #D10CA6;
+    color: black;
+  }
+  
+.horror-thriller .arrow-buttons .previous {
+    background-color: none;
+    color: rgb(254, 252, 252);
+    margin-left: 796px;
+  }
+  
+  .horror-thriller .arrow-buttons .next {
+    background-color: none;
+    color: rgb(254, 252, 252);
+}
+.categories .horror-thriller .button-overlay {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-right: 20px;
+  }
+  .horror-thriller .button-overlay-image img {
+    width: 200px;
+    height: 0px;
+  }
+  .horror-thriller .button-overlay-img-1 img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    margin-right: 160px;
+    padding-bottom: 13px;
+    margin-left: 100px;
+  }
+  .horror-thriller .button-overlay-img-1 .buy-1 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  .horror-thriller .button-overlay-img-1 .cart-1  {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: absolute;
+  }
+  .horror-thriller .button-overlay-img-1 .cart-1 img {
+    width: 22px;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .horror-thriller .button-overlay-img-2 img{
+    width: 170px;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 10px;
+  }
+  .horror-thriller .button-overlay-img-2 .buy-2 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .horror-thriller .button-overlay-img-2 .cart-2  {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: absolute;
+  }
+  .horror-thriller .button-overlay-img-2 .cart-2 img {
+    width: 22px;
+    margin-top: 14px;
+    align-items: center; 
+    margin-left: 10px;    
+  }
+ 
+  .horror-thriller .button-overlay-img-3 img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+  .horror-thriller .button-overlay-img-3 .buy-3 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-top: 7px;
+  }
+  .horror-thriller .cart-3  {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .horror-thriller .cart-3 img {
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 10px; 
+  }
+ 
+  .horror-thriller .button-overlay-img-4 img{
+    width: 170px;
+    display: flex;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .horror-thriller .button-overlay-img-4 .buy-4 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-top: 7px;
+  }
+  .horror-thriller .cart-4  {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .horror-thriller .cart-4 img {
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 10px; 
+  }
+ 
+  /* TV Series Category*/
+.tv-series {
+    display: inline-block;
+    
+}
+.tv-series h3 {
+    margin-left: 25px;
+}
+.tv-series .arrow-buttons {
+   display: inline-block;
+   position: relative;
+   align-items: center;
+}
+.tv-series .arrow-buttons {
+    display: flex;
+}
+.tv-series .arrow-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }  
+  .tv-series .arrow-buttons a:hover {
+    background-color: #D10CA6;
+    color: black;
+  }
+  
+  .tv-series .arrow-buttons .previous {
+    background-color: none;
+    color: rgb(254, 252, 252);
+    margin-left: 720px;
+  }
+  
+  .tv-series .arrow-buttons .next {
+    background-color: none;
+    color: rgb(254, 252, 252);
+}
+.categories .tv-series .button-overlay {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-right: 20px;
+  }
+  .tv-series .button-overlay-image img {
+    width: 200px;
+    height: 0px;
+  }
+  .tv-series .button-overlay-img-1 img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    margin-right: 160px;
+    padding-bottom: 13px;
+    margin-left: 100px;
+  }
+  .tv-series .button-overlay-img-1 .buy-1 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 8px;
+  }
+  .tv-series .button-overlay-img-1 .cart-1  {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: absolute;
+  }
+  .tv-series .button-overlay-img-1 .cart-1 img {
+    width: 22px;
+    align-items: center;
+    margin-top: 13px;
+    margin-left: 10px;
+  }
+  .tv-series .button-overlay-img-2 img{
+    width: 170px;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 10px;
+  }
+  .tv-series .button-overlay-img-2 .buy-2 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .tv-series .button-overlay-img-2 .cart-2  {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: absolute;
+  }
+  .tv-series .button-overlay-img-2 .cart-2 img {
+    width: 22px;
+    margin-top: 14px;
+    align-items: center; 
+    margin-left: 10px;    
+  }
+ 
+  .tv-series .button-overlay-img-3 img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+  .tv-series .button-overlay-img-3 .buy-3 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    margin-top: 15px;
+  }
+  .tv-series .cart-3  {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .tv-series .cart-3 img {
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 10px; 
+  }
+ 
+  .tv-series .button-overlay-img-4 img{
+    width: 170px;
+    display: flex;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .tv-series .button-overlay-img-4 .buy-4 {
+    background-color: #D10CA6;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 30px;
+  }
+  .tv-series .cart-4  {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .tv-series .cart-4 img {
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 10px; 
+  }
+ 
+   /* Footer section */
+ footer {
+  background-color: hsl(0, 1%, 69%);
+   width: 100%;
+   height: 190px;
+   display: block;
+   margin-top: 200px;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   padding-top: 50px;
+ }
+ footer .footer-logo {
+   display: block;
+   position: relative;
+   justify-content: center;
+   margin-top: 10px;
+ }
+ .footer-logo img {
+   width: 150px;
+   height: 50px;
+   margin-left: 44%;  
+   padding-bottom: 50px; 
+ }
+ .footer-text {
+   margin-left: 20%;
+ }
+ .footer-text p {
+   float: left;
+   color: #D10CA6;
+   font-size: 11px;
+   font-weight: bold;
+   padding-left: 10px;
+ }
+ .footer-text img {
+   width: 10px;
+   height: 10px;
+   margin-left: auto;
+   padding-left: 60px;
+   padding-top: 12px;
+ }
+ .footer-copyright img {
+   position: absolute;
+   margin-right: 40px;
+   display: inline;
+ }
+ .footer-copyright p {
+   color: #8e8e91;
+   font-weight: dark;
+   margin-left: 7%;
+ }
+   
+ 
+  
+  
+  

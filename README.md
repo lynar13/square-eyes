@@ -1,33 +1,102 @@
+
 # HTML & CSS Course Assignment
 
-## Brief
+## Overview
 
-You must deliver a properly functioning, responsive website for the assignment brief you chose in Design 1.
+Square Eyes is a responsive website designed and developed as part of the HTML & CSS course assignment. The project showcases a functional, multi-page site built from scratch without the use of frameworks, emphasizing semantic HTML, DRY CSS principles, and accessibility standards.
 
-The site needs to have every page listed in the site architecture on your chosen brief. Certain functionality requiring JavaScript can be mimicked; for example, a login page could link across from the ‘Sign in’ button.
+## Table of Contents
 
-- The HTML should be semantic and neat.
-- The CSS should follow the DRY principle and be easy to read.
-- The website should be responsive and look good at every screen size with no horizontal scrollbars. Use Flexbox and CSS Grids where appropriate. Please do not use a CSS framework like Bootstrap; we want to see that you can build responsive sites without the help of a framework.
-- The site should be WCAG compliant, and accessibility should be taken into account.
-- Each page should have a unique <meta name="description">, <title>, and <h1>.
-- You should not use copied code in your submission. All code submitted must be written by yourself. You may use external sources to show you how to achieve specific effects, which should be included in your report.
+- Overview
+- Features
+- Technologies Used
+- Getting Started
+- Deployment
+- Testing
+- Contributing
+- Acknowledgments
 
-## Process
+## Features
 
-1. Look at your prototype and consider how the elements will move across the different devices. Which elements move where on different devices?
-2. Write your HTML and CSS, ensuring your HTML is semantic and bug-free and your CSS follows DRY principles.
-3. Use media queries, flex or grid to make your website responsive across screen sizes.
-4. Test your website using your developer tools and also test on major browsers and various devices.
-5. Validate your code using the Markup Validation Service
-6. Use the WAVE Web Accessibility Evaluation Tools to test that your site matches best practices for accessibility
-7. When your site is ready, post it on the Teams peer review channel.
-8. Look at the work of your peers and write a review for them.
-9. Make adjustments based on the feedback you gather from peers and teachers.
-10. Submit here on Teams.
+- Responsive Design: The website is fully responsive, ensuring a seamless experience across all devices.
 
-## Delivery
+- Accessibility: WCAG compliant, with accessibility considerations taken into account.
 
-- Please include a link to your live site, deployed on Netlify or GitHub Pages in your submission.
-- Please include a link to your public GitHub repo containing your code in your submission.
-- There is no reflection for this CA.
+- Semantic HTML: Clean and well-structured HTML5.
+
+- DRY CSS: CSS follows the DRY principle, making it easy to maintain and extend.
+
+- SEO Optimized: Each page has unique meta descriptions, titles, and H1 tags.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (for mimicked functionality)
+Flexbox & CSS Grid
+
+## Getting Started
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+- A modern web browser
+
+- Git installed on your local machine
+
+### Installation
+
+- Clone the repository:
+
+git clone https://github.com/NoroffFEU/html-css-course-assignment-lynar13.git
+
+- Navigate to the project directory:
+
+cd html-css-course-assignment-lynar13
+
+### Running the Website
+
+- Open the 'index.html' file in your web browser to view the website.
+
+## Deployment
+
+The website can be deployed on platforms like Netlify or GitHub Pages. For this project, it is deployed on GitHub Pages.
+
+### GitHub Pages Deployment
+ 
+ - Push your code to the main branch on GitHub.
+ - Navigate to the repository settings.
+
+- Under the "Pages" section, set the source to the main branch.
+
+- Your site will be published at https://<username>.github.io/html-css-course-assignment-lynar13/.
+
+## Testing
+
+### HTML Validation
+
+Use the Markup Validation Service to validate the HTML.
+
+### Accessibility Testing
+
+Use the WAVE Web Accessibility Evaluation Tool to ensure accessibility best practices.
+
+### Browser Testing
+
+Test the website on major browsers (Chrome, Firefox, Safari, Edge) and various devices to ensure compatibility and responsiveness.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code adheres to the project's coding standards.
+
+## Acknowledgments
+
+- [Noroff School of Technology and Digital Media](https://www.noroff.no/)
+- [W3Schools](https://www.w3schools.com/)
+
+## Contact
+
+Visit the live site: [Square Eyes](https://norofffeu.github.io/html-css-course-assignment-lynar13/)
+
+For any questions or feedback, please contact [Lynar13].
