@@ -16,6 +16,10 @@ a {
   color: white;
 }
 
+p {
+  font-weight: dark;
+}
+
 /* Base styles for the navigation */
 nav {
   display: flex;
@@ -38,6 +42,7 @@ nav .logo img {
 
 .nav-links li a {
   color: white;
+  font-size: 20px;
   text-decoration: none;
   padding: 5px 10px;
   transition: background-color 0.3s;
@@ -140,6 +145,26 @@ footer .footer-text {
 footer .copy {
   margin-top: 10px;
 }
+
+/* Style for the Back to Top button */
+.back-to-top.always-show {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #363732;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.back-to-top.always-show:hover {
+  background-color: #D10CA6;
+}
+
 
 
 @media (max-width: 768px) {

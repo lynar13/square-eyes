@@ -34,6 +34,7 @@ nav .logo img {
 }
 
 .nav-links li a {
+  font-size: 20px;
   color: white;
   text-decoration: none;
   padding: 5px 10px;
@@ -193,9 +194,10 @@ nav .logo img {
   border-radius: 10px;
 }
 
-.thumbnail-img:hover img {
+.thumbnail-img:hover img,
+.banner-img img {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px #D10CA6;
   border-radius: 16px;
   cursor: pointer;
 }
@@ -247,6 +249,26 @@ footer .footer-text {
 footer .copy {
   margin-top: 10px;
 }
+
+/* Style for the Back to Top button */
+.back-to-top.always-show {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #363732;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.back-to-top.always-show:hover {
+  background-color: #D10CA6;
+}
+
 
 @media (max-width: 768px) {
   .nav-links {
