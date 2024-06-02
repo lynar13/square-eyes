@@ -14,7 +14,7 @@ a {
 }
 
 /* Base styles for the navigation */
-nav {
+nav, .desc-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,13 +27,13 @@ nav .logo img {
   height: 40px;
 }
 
-.nav-links {
+.nav-links, .desc-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-.nav-links li a {
+.nav-links li a, .desc-links li a {
   color: white;
   font-size: 20px;
   text-decoration: none;
@@ -41,7 +41,8 @@ nav .logo img {
   transition: background-color 0.3s;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover, 
+.desc-links li a:hover {
   background-color: #555;
   border-radius: 5px;
 }
@@ -222,14 +223,6 @@ nav .logo img {
   color: #D10CA6;
 }
 
-.desc-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #D10CA6;
-  padding: 10px 20px;
-  font-family: Arial, sans-serif;
-}
 
 .description,
 .cast,
@@ -248,13 +241,16 @@ nav .logo img {
   text-align: center;
 }
 
-.description p,
 .cast p,
-.director p,
-.more-details p {
+.more-details p,
+.director p {
+  text-align: center;
+} 
+
+.description p {
   font-size: 18px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: justify;
 }
 
 .thumbnails-heading {
@@ -362,18 +358,29 @@ footer .copy {
 /* For smaller screens */
 @media (max-width: 768px) {
   
-  .description {
+  .title {
       flex-direction: column;
       align-items: center;
+  }
+
+  .desc-heading img {
+    margin: 0 auto;
   }
 
   .desc-title {
       margin-left: 0;
       text-align: center;
   }
+  .desc-nav {
+    justify-content: center;
+  }
+  .desc-links {
+    flex-direction: column;
+    align-items: center;
+  }
 
-  .desc-menu nav ul {
-      flex-direction: column;
+  .buy-add-button {
+    margin: 0 auto;
   }
 
   .thumbnails-container {
