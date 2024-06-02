@@ -54,6 +54,11 @@ nav .logo img {
   cursor: pointer;
 }
 
+.active {
+  background-color: #363732;
+  border-radius: 8px;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   
@@ -223,7 +228,9 @@ nav .logo img {
   color: #D10CA6;
 }
 
-
+.desc-nav {
+  border-radius: 8px;
+}
 .description,
 .cast,
 .director,
